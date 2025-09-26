@@ -1,14 +1,21 @@
-﻿<?xml version = "1.0" encoding = "UTF-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:BmiCalculator"
-             x:Class="BmiCalculator.App">
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+x:Class="BmiCalculator.App">
     <Application.Resources>
         <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
-                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
-            </ResourceDictionary.MergedDictionaries>
+            
+            <LinearGradientBrush x:Key="BackgroundGradient" StartPoint="0,0" EndPoint="0,1">
+                <GradientStop Color="#2193b0" Offset="0.0" />
+                <GradientStop Color="#6dd5ed" Offset="1.0" />
+            </LinearGradientBrush>
+
+            <Style TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#1976D2" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontAttributes" Value="Bold" />
+            </Style>
+
         </ResourceDictionary>
     </Application.Resources>
 </Application>
