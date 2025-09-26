@@ -55,5 +55,13 @@
             ResultLabel.TextColor = color;
         }
 
+        private string GetCategory(double bmi)
+        {
+            if (bmi < 18.5) return "Недостаточная масса тела";
+            if (bmi < 25) return "Нормальная масса";
+            if (bmi < 30) return "Избыточная масса";
+            return "Ожирение";
+        }
+
     }
 }
