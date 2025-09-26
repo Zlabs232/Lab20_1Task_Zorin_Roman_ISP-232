@@ -46,8 +46,11 @@
                     <Label x:Name="ResultLabel" FontSize="18" HorizontalOptions="Center" VerticalOptions="Center" />
                     <Label x:Name="AdviceLabel" Style="{StaticResource SmallLabel}" HorizontalOptions="Center" VerticalOptions="Center" />
 
-                </VerticalStackLayout
+                </VerticalStackLayout>
             </Border>
+
+                <Label Text="(Вес в кг; рост в сантиметрах)" Style="{StaticResource SmallLabel}" HorizontalOptions="Center" />
+
         </VerticalStackLayout>
                         
     </Grid>
