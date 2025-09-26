@@ -63,5 +63,13 @@
             return "Ожирение";
         }
 
+        private Color GetCategoryColor(double bmi)
+        {
+            if (bmi < 18.5) return Color.FromArgb("#FFA726");
+            if (bmi < 25) return Color.FromArgb("#4CAF50");
+            if (bmi < 30) return Color.FromArgb("#FF9800");
+            return Color.FromArgb("#F44336");
+        }
+
     }
 }
