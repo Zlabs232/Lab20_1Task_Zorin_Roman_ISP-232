@@ -23,4 +23,33 @@
         </ResourceDictionary>
     </ContentPage.Resources>
 
+    <Grid Padding="24">
+
+        <VerticalStackLayout Spacing="18" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="380">
+            <Label Text="ИМТ Калькулятор" FontSize="28" FontAttributes="Bold" HorizontalOptions="Center" TextColor="White" />
+
+            <Border StrokeShape="RoundRectangle 18" BackgroundColor="Gray" Padding="18">
+
+                <VerticalStackLayout Spacing="12">
+
+                    <Label Text="Вес (кг)" Style="{StaticResource CardLabel}" />
+                    <Entry x:Name="WeightEntry" Placeholder="например, 70" Style="{StaticResource TextEntry}" Keyboard="Numeric" />
+
+
+                    <Label Text="Рост (см)" Style="{StaticResource CardLabel}" />
+                    <Entry x:Name="HeightEntry" Placeholder="например, 175" Style="{StaticResource TextEntry}" Keyboard="Numeric" />
+
+
+                    <Button Text="Рассчитать ИМТ" Clicked="OnCalculateClicked" CornerRadius="10" HeightRequest="46" />
+
+
+                    <Label x:Name="ResultLabel" FontSize="18" HorizontalOptions="Center" VerticalOptions="Center" />
+                    <Label x:Name="AdviceLabel" Style="{StaticResource SmallLabel}" HorizontalOptions="Center" VerticalOptions="Center" />
+
+                </VerticalStackLayout
+            </Border>
+        </VerticalStackLayout>
+                        
+    </Grid>
+    
 </ContentPage>
